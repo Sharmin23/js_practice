@@ -230,28 +230,129 @@
 //  var cousin = ["Sharmin","Sumaiya","Nasima","karima"];
 //  console.log(cousin);
 // console.log(cousin.indexOf(Sha));
- ss
 // var number = [ 10,11,12 ,13 ,13,14];
 // console.log(number.indexof(10));
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits.indexOf("Apple"));
-console.log(fruits.length);
-console.log(fruits[0]);
-fruits[0]="sharmin";
-console.log(fruits);
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.indexOf("Apple"));
+// console.log(fruits.length);
+// console.log(fruits[0]);
+// fruits[0]="sharmin";
+// console.log(fruits);
+
+// var numbers = [ 1, 2, 6, 7,9 ];
+// console.log(numbers.length);
+// console.log(numbers[1]);
+// numbers[2]= 10;
+// console.log(numbers);
+// console.log(numbers.indexOf(2));
+
+// numbers.push(23);
+// console.log(numbers);
+// numbers.pop();
+// console.log(numbers);
+// numbers.unshift(5);
+// console.log(numbers);
+// numbers.shift();
+// console.log(numbers);
+
+// problem no. 1
+
+// var fruits = ["Apple","Banana","Orange"];
+// console.log(fruits.indexOf("Banana"));
+// // console.log(fruits[1]);
+// fruits[1]= "Mango";
+// console.log(fruits);
+
+// Practice problem 2
+
+
+//function
+// function startFan(time){
+//     console.log(time + 'stand up');
+//     console.log('walk towards the switch');
+//     console.log("press the switch");
+// }
+    //call the function
+
+    // startFan(10);
 
 
 
+// function add(num1,num2){
+//     console.log(num1,num2);
+//     var sum = num1 + num2;
+//     return sum;
+// }
+
+//     var total = add(80,20);
+//     console.log('total',total);
+
+// function getAverage (assignment1,assignment2,assignment3){
+//     const total = assignment1 + assignment2 + assignment3;
+//     const average = total / 3;
+//     return average;
+// }
+// const assignment1 = 40;
+// const assignment2 = 40;
+// const assignment3 = 80;
+
+// var average = getAverage(assignment1,assignment2,assignment3);
+// console.log(average);
 
 
+// function add (num1,num2){
+//     sum = num1 + num2;
+//     return sum;
+// }
+// const result1 = add(12,13);
+// const result2 = add(20,40);
+// const finalResult = add(result1, result2);
+// console.log(finalResult);
 
 
+// Object
+
+var shoppingCart = {
+    book: 3,
+    sunglass : 1,
+    keyboard : 5,
+    mouse : 1,
+    pen : 25
+
+}
+// console.log(shoppingCart);
+// console.log(shoppingCart.sunglass);
+// shoppingCart['sunglass'] = 6;
+// console.log(shoppingCart.sunglass);
+
+// var propertise = Object.keys(shoppingCart); 
+// console.log(propertise);
+
+// var propertiseValue = Object.values(shoppingCart);
+// console.log(propertiseValue);
+
+// var propertyName = 'book';
+// var propertyValue = shoppingCart[propertyName];
+// console.log(propertyName,propertyValue);
 
 
+// const keys = Object.keys(shoppingCart);
+// console.log(keys);
+// const values = Object.values(shoppingCart);
+// console.log(values);
+// // for loop
+// for (var i = 0; i<keys.length; i++){
+//     var propertyName = keys[i];
+//     var  propertyValue = shoppingCart[propertyName];
+//     console.log (propertyName,propertyValue);
 
+// }
 
+//for in loop
 
-
-
-
-
+// for(var propertyName in shoppingCart){
+//     const value = shoppingCart[propertyName];
+//     console.log(propertyName,value);
+// }
+   
+// topic dom
