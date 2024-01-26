@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendly Js </title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to  MY Website</h1>
+  </header>
+  <main>
+    <section>
+       <div id="friends">
+        <div class="friend">
+          <h3 class="friend-name">Friend-1</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="friend">
+          <h3 class="friend-name">Friend-2</h3>
+          <p>Sapiente ipsa ratione necessitatibus quaerat.</p>
+        </div>
+        <div class="friend">
+          <h3 class="friend-name">Friend-3</h3>
+          <p>Id corrupti ipsa quos quibusdam!</p>
+        </div>
+        <div class="friend">
+          <h3 class="friend-name">Friend-4</h3>
+          <p>Numquam quaerat molestiae ea reiciendis!</p>
+        </div>
+        <div class="friend">
+          <h3 class="friend-name">Friend-5</h3>
+          <p>Provident deleniti non quasi aliquid?</p>
+        </div>
+       </div>
+      <div class="operations">
+         <button id="apply-bg">Apply bacckground</button>
+         <button id="add-friend"> Add new FRIEND</button>
+
+      </div>
+    </section>
+    <script>
+      document.getElementById('apply-bg').addEventListener('click',function(){
+        const friends = document.getElementsByClassName('friend');
+        for(const friend of friends){
+         friend.style.backgroundColor = 'pink';       }
+
+      })
+      document.getElementById('add-friend').addEventListener('click',function(){
+        const friendcontainer = document.getElementById('friends');
+        const friend = document.createElement('div');
+        friend.innerHTML = `<h3 class = "friend-name"> New Friend </h3>
+        <p> Something New added </p>`
+
+        friendcontainer.appendChild(friend);
+
+      })
+
+
+
+    </script>
+  </main>
+  
+</body>
+</html>

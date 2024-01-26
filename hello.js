@@ -312,14 +312,14 @@
 
 // Object
 
-var shoppingCart = {
-    book: 3,
-    sunglass : 1,
-    keyboard : 5,
-    mouse : 1,
-    pen : 25
+// var shoppingCart = {
+//     book: 3,
+//     sunglass : 1,
+//     keyboard : 5,
+//     mouse : 1,
+//     pen : 25
 
-}
+
 // console.log(shoppingCart);
 // console.log(shoppingCart.sunglass);
 // shoppingCart['sunglass'] = 6;
@@ -356,3 +356,279 @@ var shoppingCart = {
 // }
    
 // topic dom
+
+
+// const liCollection = document.getElementsByTagName('li'); // Corrected the method name to getElementsByTagName
+// for (const li of liCollection) {
+//     console.log(li.innerText);
+// }
+// const liCollection = document.getElementsByTagName('li');
+// console.log(liCollection);
+
+// // For each loop
+
+// for(const li of liCollection){
+//     console.log(li.innerText);
+// }
+
+// var fruitName = document.getElementsByClassName('fruitName');
+
+// // hello.js
+// var fruitNameElements = document.getElementsByClassName('fruitName');
+
+// // Iterate through the collection and do something with each element
+// for (var i = 0; i < fruitNameElements.length; i++) {
+//     console.log(fruitNameElements[i].innerText);
+//     // Perform any other operations you need
+
+// querySelectorALL
+
+// const someLi = document.querySelectorAll('.fruitName');
+
+// for(const li of someLi){
+//     console.log(li.innerText);
+// }
+
+//styling Dom properties ,ADD  and remove css using js
+
+// const sections = document.querySelectorAll('section');
+// for (const section of sections){
+//     section.style.border = '2px solid steelblue';
+// }
+// const fruitsContainer = document.getElementById('fruits-Container');
+
+// fruitsContainer.classList.add('text-center');
+// fruitsContainer.classList.remove('')
+//.................................
+//   const heading = document.getElementById('fruits-title');
+//   console.log(heading.innerText);
+
+//   const favPlaces = document.getElementsByClassName('fav-places');
+//   for (const li of favPlaces) {
+//       console.log(li.innerText);
+//   }
+//  const AllLi = document.getElementsByTagName('li');
+
+//  console.log(AllLi);
+// var places = document.querySelectorAll('li');
+// for(const li of places){
+//     console.log(li.innerText);
+// }
+
+// var place = document.querySelector('li');
+// console.log(place);
+
+
+// ************* Styling Dom Properties ,Add and remove Css Class Using JS***************
+
+// var sections = document.querySelectorAll('section');
+// for (const section of sections){
+//     section.style.border = '2px solid red';
+//     section.style.marginBottom = '5px';
+//     section.style.borderRadius = '15px';
+//     section.style.paddingLeft = '7px';
+//     section.style.backgroundColor = 'lightgray';
+// }
+
+// var placesContainer = document.getElementById('places-container');
+// placesContainer.classList.add('text-center');
+
+
+// var placesContainer = document.getElementById('places-container');
+// placesContainer.classList.add('text-center');
+
+// // OPTION 3
+
+// var blueButton = document.getElementById('make-blue');
+// blueButton.onclick = makeblue;
+
+// function makeblue(){
+//     document.body.style.backgroundColor = 'blue';
+// }
+// var pinkButton = document.getElementById("pink-button");
+// pinkButton.onclick = makePink;
+// function makePink(){
+//     document.body.style.background = 'pink';
+// }
+
+// document.getElementById("pink-button").addEventListener( 'click', function(){
+//     document.body.style.backgroundColor = 'pink';
+// }) 
+
+// function makeRed(){
+//     document.body.style.backgroundColor = 'red';
+// }
+
+// const makeBlueButton = document.getElementById('make-blue');
+// makeBlueButton.onclick = makeBlue;
+
+// function makeBlue(){
+//     document.body.style.backgroundColor = 'blue';
+// }
+// var makePink = document.getElementById('make-pink');
+// makePink.addEventListener('click',makePin);
+
+// function makePin(){
+//     document.body.style.backgroundColor = 'pink';
+// }
+
+// document.getElementById('make-blue').addEventListener('click',function(){
+//     document.body.style.backgroundColor = 'goldenrod';
+// })
+// function handleOnClick(){
+    
+// }
+// function add(first,second){
+//     const total = first + second;
+//     return total;
+
+// }
+// const result = add(10,20);
+// console.log(result);
+// function add(first,second = 0){
+//     const total = first + second;
+//     return total;
+// }
+//  const result = add(10);
+//  console.log(result);
+// // `` use of this 
+// const multiLine =`First line
+// second lind of code 
+// third line of code `
+// console.log(multiLine);
+
+// // template string 
+// const a = 20;
+// const b = 30;
+// const newSummary = `sum of ${a} and ${b} is :${a+b}` 
+
+// console.log(newSummary);
+ //arrow js
+
+// const add = (first,second)=> first + second;
+
+// var result = add(10,20);
+// console.log(result);
+
+
+// const getFullName = (first,last)=> first + '' +last;
+// // no peremeter
+// var getPie = () =>3.1416;
+
+// one peremeter 
+// var doubleIt = (num) => num*2;
+
+// one perameter simple version
+// var fiveTimes = num => num * 5;
+
+//multiline arrow function
+// from multine arrow function we have to use return keyword
+// var doMath = (x,y,z) =>{
+//     var firstSum = x+y;
+//     var secondSum = y+z;
+//     var multiplyResult = firstSum * secondSum;
+//     var result = multiplyResult/2;
+//     return result;
+// }
+//spread operator,Array Max,copy Arrays
+//   var max = Math.max(12, 45, 76, 192);
+//   console.log(max);
+// var numbers = [22, 43, 65, 221, 97];
+// var largest = Math.max(numbers);
+// // var largest = Math.max(...numbers);
+// console.log(largest);
+
+// Array or object carried the reference
+// var numbers2 = numbers;
+// numbers.push(55);
+// console.log(numbers);
+// console.log(numbers2);
+// to solve this problem we use spread operator
+
+// var numbers2 = [...numbers];
+// numbers.push(55);
+// console.log(numbers2);
+// output[
+    // 22,
+    // 43,
+    // 65,
+    // 221,
+    // 97
+// ]
+// console.log(numbers);
+//This is out put  [
+    // 22,
+    // 43,
+    // 65,
+    // 221,
+    // 97,
+    // 55
+// ]
+// Object and Array Destrucuring
+
+// Previously used
+// var  student = {
+//     names: 'Sharmin Sultana',
+//     address : 'Kapasia',
+//     phone : '0153349026387',
+// }
+// var names = student.names;
+// console.log(names);
+
+// siplified version
+
+// var {age} = {name:'Sumaiya',age:18,profession:'makeup artist'}
+
+// console.log(age);
+
+//array destructuring 
+// const [first, another] = [44, 99, 88, 4543];
+// console.log(first,another);
+
+// var cousin = ['Fahmida','rasel','sonali','sumaiya'];
+// var [student, worker, doctor] = cousin;
+// console.log(student);
+// function getNames(){
+//     return ['Alim','Halim'];
+// }
+// var [baba,chacha]=getNames();
+// console.log(baba,chacha);
+
+/*******Access Value ,Nested Object Optional Chaining */
+
+// var users = [
+//     {   id:1,
+//         name:'abul',
+//         job:'doctor'
+//     }
+// ]
+// console.log(users[0].job);
+// var data = {
+//     count : 50000,
+//     data :[
+//         {id : 1,name:'sharmin',job:'learner'},
+//         {id : 2,name:'sultana',job:'learner'},
+//     ]
+// }
+// console.log(data.data[0].job);
+
+// var user= {
+//     id : 26563,
+//     name: 'Sharmin Sutana',
+//     address:{
+//         street:{
+//             first :'35/A kolabagan lane',
+//             second: 'third floor',
+//             third: 'right side',
+//         },
+//         postOffice: 'kolabagan',
+//         city:'dhaka'
+
+//     }
+// }
+
+// var userFloor = user.address?.street.second;
+// console.log(userFloor);
+// *********Array Map to Do one Line loop Magic*******
+
+const numbers = []
